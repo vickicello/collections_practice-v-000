@@ -20,12 +20,12 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array = []
+  new_array = []
   array.each do |i|
     i[2] = "$"
-    array << i
+    new_array << i
   end
-  array
+  new_array
 end
 
 def find_a(array)
