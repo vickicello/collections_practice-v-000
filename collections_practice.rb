@@ -27,3 +27,26 @@ def kesha_maker(array)
   end
   array
 end
+
+def find_a(array)
+  array.select do |a|
+    a.start_with?("a")
+  end
+end
+
+def sum_array(array)
+  array.inject do |sum, element|
+    sum + element
+  end
+end
+
+def add_s(array)
+  array.each_with_index.collect do |i, index|
+    if index != 1
+      i << "s"
+    elsif index == 1
+      i
+    end
+  end
+end
+    
